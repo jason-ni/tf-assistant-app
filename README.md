@@ -1,3 +1,5 @@
+[中文](./README_zh.md)
+
 # tf-assistant
 
 **tf-assistant** is a macOS desktop application that brings together speech transcription, screenshot OCR, translation, and subtitle editing — powered by local AI models.
