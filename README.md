@@ -14,10 +14,15 @@
 - Multiple transcription modes: voice activity detection, fixed windows, or full diarization
 - Export transcripts as SRT
 
+### AI Dictation
+- Speak and have your words transcribed into text in real time, powered by local AI models
+- Dictate notes, messages, or documents directly in the app
+
 ### Screenshot & OCR
 - Capture screen regions with a global shortcut
 - Text recognition with configurable detection and recognition models
 - Document layout analysis, orientation detection, formula recognition, and table extraction
+- End-to-end document OCR with the Ovis OCR2 model
 - Overlay results with bounding boxes
 
 ### Snap Translate
