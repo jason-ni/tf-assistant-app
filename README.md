@@ -15,14 +15,20 @@
 - Export transcripts as SRT
 
 ### AI Dictation
-- Speak and have your words transcribed into text in real time, powered by local AI models
-- Dictate notes, messages, or documents directly in the app
+- Dictate into any app: speak and the transcript is inserted into the frontmost app in real time, powered by local ASR models
+- VAD-based realtime recognition with hold-to-talk (Shift) and push-to-talk toggle-key modes
+- Select any installed microphone input device; mute/unmute on demand
+- LLM polish modes before insertion: raw, light, structured, formal, translate, plus user-defined custom modes
+- Hotwords and working-language context to fix misrecognitions
+- Built-in zh/en prompts, user-editable with restore-to-defaults
+- OpenAI-compatible providers with per-provider thinking disable and opt-in proxy
 
 ### Screenshot & OCR
 - Capture screen regions with a global shortcut
 - Text recognition with configurable detection and recognition models
 - Document layout analysis, orientation detection, formula recognition, and table extraction
-- End-to-end document OCR with the Ovis OCR2 model
+- End-to-end document OCR with the Ovis OCR2 model (markdown-direct output, selectable variants)
+- Markdown-direct viewer: visual-region overlay, raw markdown rendering (math, code, tables), whole-page translation, copy as markdown
 - Overlay results with bounding boxes
 
 ### Snap Translate
