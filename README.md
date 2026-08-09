@@ -41,6 +41,14 @@
 - Configurable target language
 - Auto-start translation service on boot
 
+### Text-to-Speech
+- Zero-shot voice cloning with the local Audio8-TTS model — no training or fine-tuning required
+- Voice profile management: create a voice from a reference audio clip and its exact transcript
+- Auto-transcribe the reference clip with the built-in ASR helper to pre-fill the transcript (editable before saving)
+- Generate speech from text, streamed to MP3 with in-page playback and auto-play option
+- Optional LLM text normalization: verbalizes dates, numbers, currencies, units, abbreviations, and URLs naturally before synthesis
+- Runs in a dedicated background worker subprocess
+
 ### Subtitle Editor
 - Create and manage subtitle projects
 - Multi-track support
@@ -51,7 +59,7 @@
 
 ### Model Management
 - Browse, download, and delete AI models from built-in catalog
-- Model groups: ASR, OCR, translation, VAD
+- Model groups: ASR, OCR, translation, VAD, TTS
 - Download progress tracking
 - Source preference (HuggingFace / ModelScope)
 
