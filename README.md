@@ -47,6 +47,7 @@
 - Auto-transcribe the reference clip with the built-in ASR helper to pre-fill the transcript (editable before saving)
 - Generate speech from text, streamed to MP3 with in-page playback and auto-play option
 - Optional LLM text normalization: verbalizes dates, numbers, currencies, units, abbreviations, and URLs naturally before synthesis
+- Real-time WebSocket streaming playback protocol (`/ws/tts`): submit text incrementally and play synthesized audio live, for third-party clients and integrations
 - Runs in a dedicated background worker subprocess
 
 ### Subtitle Editor
@@ -71,6 +72,7 @@
 ### HTTP Server
 - REST API for speech transcription and translation
 - Configurable host, port, and default model parameters
+- TTS streaming WebSocket endpoint (`/ws/tts`) for real-time speech playback — see [docs/TTS-WebSocket-Stream-Protocol.md](docs/TTS-WebSocket-Stream-Protocol.md)
 
 ### Customization
 - Configurable global shortcuts (screenshot, snap translate, audio capture)
