@@ -7,7 +7,7 @@
 ## Features
 
 ### AI Coding Agent
-An Agent Development Environment (ADE) built on the opencode coding agent, in a dedicated Agent window.
+An Agentic Development Environment (ADE) built on the opencode coding agent, in a dedicated Agent window.
 
 - Chat with an AI agent inside your repositories: multi-turn streaming with text, reasoning, tool-call, todo-list, image, and plan-review parts
 - Helmor-style composer with model picker (grouped by provider), reasoning-effort picker, agent picker (build / plan / custom), and context-usage ring
