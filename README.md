@@ -2,9 +2,24 @@
 
 # tf-assistant
 
-**tf-assistant** is a macOS desktop application that brings together speech transcription, screenshot OCR, translation, and subtitle editing — powered by local AI models.
+**tf-assistant** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR, translation, and subtitle editing — powered by local AI models.
 
 ## Features
+
+### AI Coding Agent
+An Agent Development Environment (ADE) built on the opencode coding agent, in a dedicated Agent window.
+
+- Chat with an AI agent inside your repositories: multi-turn streaming with text, reasoning, tool-call, todo-list, image, and plan-review parts
+- Helmor-style composer with model picker (grouped by provider), reasoning-effort picker, agent picker (build / plan / custom), and context-usage ring
+- Repository & workspace model: add local repos or clone from URL, then work in four workspace modes — `worktree` (git worktree checkout), `local` (operate in place), `chat` (scratch), and `non_git` (plain directory)
+- Right-sidebar file browser: lazy-loaded directory tree, Git status badges, quick search, read-only preview (incl. inline image/audio/video), and full file ops (new, rename, delete, reveal)
+- Inline Git panel: branch switcher, ahead/behind + staged/unstaged status summary, per-file worktree diffs, and recent commits
+- Embedded collapsible terminal panel: multiple plain-shell terminals per workspace, kept alive while collapsed
+- Dedicated file editor window with multi-file tabs: Monaco for code, Milkdown WYSIWYG for Markdown, optional Vim mode, font-size/font-family controls, and find/replace
+- Safety-first permissions: every bash command asks, secret-file reads ask, the `plan` agent stays read-only, with persistent "always allow" rules and an auto-grant toggle
+- Interactive question cards: step through the agent's questions with options, free-text answers, and Decline/Submit
+- Slash-command discovery (`/`), message revert/unrevert, virtualized long threads, and server-health heartbeat recovery
+- Per-workspace MCP configuration UI layered on your global opencode config (new servers default to disabled)
 
 ### Speech-to-Text
 - Transcribe audio files (WAV, MP3, FLAC, M4A, AAC, and more)
@@ -88,7 +103,7 @@
 
 ## Installation
 
-Download the latest release from the [Releases](https://github.com/anomalyco/tf-assistant/releases) page.
+Download the latest release from the [Releases](https://github.com/jason-ni/tf-assistant-app/releases) page.
 
 ## Getting Started
 
