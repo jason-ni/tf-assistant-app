@@ -58,7 +58,8 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 
 ### Text-to-Speech
 - Zero-shot voice cloning with the local Audio8-TTS model — no training or fine-tuning required
-- Voice profile management: create a voice from a reference audio clip and its exact transcript
+- Multi-model support: 0.6B and 0.1B checkpoints, switchable in the TTS page
+- Voice profile management: create a voice from a reference audio clip and its exact transcript, delete voices, and play back reference audio
 - Auto-transcribe the reference clip with the built-in ASR helper to pre-fill the transcript (editable before saving)
 - Generate speech from text, streamed to MP3 with in-page playback and auto-play option
 - Optional LLM text normalization: verbalizes dates, numbers, currencies, units, abbreviations, and URLs naturally before synthesis
