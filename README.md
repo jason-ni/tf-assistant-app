@@ -10,12 +10,13 @@
 An Agentic Development Environment (ADE) built on the opencode coding agent, in a dedicated Agent window.
 
 - Chat with an AI agent inside your repositories: multi-turn streaming with text, reasoning, tool-call, todo-list, image, and plan-review parts
-- Helmor-style composer with model picker (grouped by provider), reasoning-effort picker, agent picker (build / plan / custom), and context-usage ring
+- Helmor-style composer with model picker (grouped by provider), reasoning-effort picker, agent picker (build / plan / custom), and a live-updating theme-aware context-usage ring
 - Repository & workspace model: add local repos or clone from URL, then work in four workspace modes — `worktree` (git worktree checkout), `local` (operate in place), `chat` (scratch), and `non_git` (plain directory)
-- Right-sidebar file browser: lazy-loaded directory tree, Git status badges, quick search, read-only preview (incl. inline image/audio/video), and full file ops (new, rename, delete, reveal)
+- Right-sidebar file browser: filesystem-watched directory tree with auto-refresh, Git status badges, workspace-wide ripgrep file search, read-only preview (incl. inline image/audio/video), and full file ops (new, rename, delete, reveal)
 - Inline Git panel: branch switcher, ahead/behind + staged/unstaged status summary, per-file worktree diffs, and recent commits
 - Embedded collapsible terminal panel: multiple plain-shell terminals per workspace, kept alive while collapsed
-- Dedicated file editor window with multi-file tabs: Monaco for code, Milkdown WYSIWYG for Markdown, optional Vim mode, font-size/font-family controls, and find/replace
+- Dedicated file editor window with multi-file tabs that track filesystem changes: Monaco for code, Milkdown WYSIWYG for Markdown, optional Vim mode, font-size/font-family controls, and find/replace
+- LSP-powered code navigation in the editor: go-to-definition (F12 / Cmd+Click), inline definition peek (Alt+Click), find all references (Shift+F12), hover for type signatures and docs, in-file and workspace-wide symbol search, back/forward jump history, and Vim `gd`/`du` bindings
 - Safety-first permissions: every bash command asks, secret-file reads ask, the `plan` agent stays read-only, with persistent "always allow" rules and an auto-grant toggle
 - Interactive question cards: step through the agent's questions with options, free-text answers, and Decline/Submit
 - Slash-command discovery (`/`), message revert/unrevert, virtualized long threads, and server-health heartbeat recovery
