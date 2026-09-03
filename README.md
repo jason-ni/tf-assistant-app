@@ -57,16 +57,6 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Configurable target language
 - Auto-start translation service on boot
 
-### Text-to-Speech
-- Zero-shot voice cloning with the local Audio8-TTS model — no training or fine-tuning required
-- Multi-model support: 0.6B and 0.1B checkpoints, switchable in the TTS page
-- Voice profile management: create a voice from a reference audio clip and its exact transcript, delete voices, and play back reference audio
-- Auto-transcribe the reference clip with the built-in ASR helper to pre-fill the transcript (editable before saving)
-- Generate speech from text, streamed to MP3 with in-page playback and auto-play option
-- Optional LLM text normalization: verbalizes dates, numbers, currencies, units, abbreviations, and URLs naturally before synthesis
-- Real-time WebSocket streaming playback protocol (`/ws/tts`): submit text incrementally and play synthesized audio live, for third-party clients and integrations
-- Runs in a dedicated background worker subprocess
-
 ### Subtitle Editor
 - Create and manage subtitle projects
 - Multi-track support
@@ -77,7 +67,7 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 
 ### Model Management
 - Browse, download, and delete AI models from built-in catalog
-- Model groups: ASR, OCR, translation, VAD, TTS
+- Model groups: ASR, OCR, translation, VAD
 - Download progress tracking
 - Source preference (HuggingFace / ModelScope)
 
@@ -89,7 +79,6 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 ### HTTP Server
 - REST API for speech transcription and translation
 - Configurable host, port, and default model parameters
-- TTS streaming WebSocket endpoint (`/ws/tts`) for real-time speech playback — see [docs/TTS-WebSocket-Stream-Protocol.md](docs/TTS-WebSocket-Stream-Protocol.md)
 
 ### Customization
 - Configurable global shortcuts (screenshot, snap translate, audio capture)
