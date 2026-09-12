@@ -1,6 +1,6 @@
-# tf-assistant
+# TF-Assistant
 
-**tf-assistant** 是一款 macOS 桌面应用，集 AI 编程智能体、语音转录、截图 OCR、PDF 解析、翻译和字幕编辑于一体，全部由本地 AI 模型驱动。
+**[TF-Assistant](https://plaincomputing.com)** 是一款 macOS 桌面应用，集 AI 编程智能体、语音转录、截图 OCR、PDF 解析、翻译和字幕编辑于一体，全部由本地 AI 模型驱动。
 
 ## 功能特性
 

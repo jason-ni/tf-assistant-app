@@ -1,8 +1,8 @@
 [中文](./README_zh.md)
 
-# tf-assistant
+# TF-Assistant
 
-**tf-assistant** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR, PDF parsing, translation, and subtitle editing — powered by local AI models.
+**[TF-Assistant](https://plaincomputing.com)** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR, PDF parsing, translation, and subtitle editing — powered by local AI models.
 
 ## Features
 
