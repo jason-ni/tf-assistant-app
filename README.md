@@ -2,7 +2,7 @@
 
 # tf-assistant
 
-**tf-assistant** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR, translation, and subtitle editing — powered by local AI models.
+**tf-assistant** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR, PDF parsing, translation, and subtitle editing — powered by local AI models.
 
 ## Features
 
@@ -44,8 +44,15 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Text recognition with configurable detection and recognition models
 - Document layout analysis, orientation detection, formula recognition, and table extraction
 - End-to-end document OCR with the Ovis OCR2 model (markdown-direct output, selectable variants)
+- Additional end-to-end OCR engine: dots-mocr (MXFP4), selectable for screenshot and PDF OCR
 - Markdown-direct viewer: visual-region overlay, raw markdown rendering (math, code, tables), whole-page translation, copy as markdown
 - Overlay results with bounding boxes
+
+### PDF
+- Open and view local PDF files in a dedicated window from the tray menu
+- Full-featured viewer: zoom/fit, text search, page thumbnails, document outline, rotate, fullscreen, and two-page spread
+- Extract any PDF to Markdown for reading or sending to the agent; embedded images render inline via a lazy, content-addressed image protocol
+- OCR PDFs in three modes — `text` (use the existing text layer), `auto`, or `ocr` (full re-OCR) — run as background tasks with per-page persistence and full-text search
 
 ### Snap Translate
 - One-shortcut workflow: screenshot → OCR → translation
