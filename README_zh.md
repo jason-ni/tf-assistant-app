@@ -107,3 +107,5 @@
 2. 按照初始设置向导配置数据目录和工具路径
 3. 在设置 → 模型中下载所需模型
 4. 开始转录、截图或翻译
+
+由 [PlainComputing](https://plaincomputing.com) 发布。

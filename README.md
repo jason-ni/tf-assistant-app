@@ -110,3 +110,5 @@ Download the latest release from the [Releases](https://github.com/jason-ni/tf-a
 3. Download the desired models from Settings → Models
 4. Start transcribing, capturing, or translating
 
+Published by [PlainComputing](https://plaincomputing.com).
+
