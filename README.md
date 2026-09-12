@@ -111,4 +111,3 @@ Download the latest release from the [Releases](https://github.com/jason-ni/tf-a
 4. Start transcribing, capturing, or translating
 
 Published by [PlainComputing](https://plaincomputing.com).
-
