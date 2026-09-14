@@ -58,6 +58,13 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - One-shortcut workflow: screenshot → OCR → translation
 - Supports 38+ target languages
 
+### Select Text
+- Select any text in any app to summon a floating toolbar
+- Copy the selection to the clipboard
+- Search the selection on the web
+- Translate the selection with the local HY-MT2 engine (same backend as Snap Translate)
+- Send the selection to the AI agent, wrapped in a code block, for follow-up questions
+
 ### Translation
 - Built-in local translation engine
 - Translate live captions in real-time
