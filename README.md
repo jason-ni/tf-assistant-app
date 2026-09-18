@@ -2,7 +2,7 @@
 
 # TF-Assistant
 
-**[TF-Assistant](https://plaincomputing.com)** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR, PDF parsing, translation, and subtitle editing — powered by local AI models.
+**[TF-Assistant](https://plaincomputing.com)** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR & annotation, PDF parsing, translation, and subtitle editing — powered by local AI models.
 
 ## Features
 
@@ -47,6 +47,8 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Additional end-to-end OCR engine: dots-mocr (MXFP4), selectable for screenshot and PDF OCR
 - Markdown-direct viewer: visual-region overlay, raw markdown rendering (math, code, tables), whole-page translation, copy as markdown
 - Overlay results with bounding boxes
+- In-place annotation editor: rectangles, ellipses, lines, text and free-form polygons with colours, line styles, fills and rotation
+- Editable block arrows with adjustable heads, body thickness, and orthogonal / free-form routing
 
 ### PDF
 - Open and view local PDF files in a dedicated window from the tray menu

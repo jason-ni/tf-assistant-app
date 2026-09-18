@@ -1,6 +1,6 @@
 # TF-Assistant
 
-**[TF-Assistant](https://plaincomputing.com)** 是一款 macOS 桌面应用，集 AI 编程智能体、语音转录、截图 OCR、PDF 解析、翻译和字幕编辑于一体，全部由本地 AI 模型驱动。
+**[TF-Assistant](https://plaincomputing.com)** 是一款 macOS 桌面应用，集 AI 编程智能体、语音转录、截图 OCR 与标注、PDF 解析、翻译和字幕编辑于一体，全部由本地 AI 模型驱动。
 
 ## 功能特性
 
@@ -45,6 +45,8 @@
 - 新增端到端 OCR 引擎 dots-mocr（MXFP4），可用于截图与 PDF 的 OCR
 - Markdown 直出查看器：视觉区域框选叠加、原始 Markdown 渲染（公式、代码、表格）、整页翻译、复制为 Markdown
 - 在图像上叠加显示识别结果与边界框
+- 就地图片标注编辑器：矩形、椭圆、直线、文字与自由多边形，支持颜色、线型、填充与旋转
+- 可编辑块状箭头：可调节箭头、箭身粗细，支持直角 / 自由路径
 
 ### PDF
 - 从托盘菜单打开并查看本地 PDF 文件，使用独立窗口
