@@ -17,6 +17,8 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Embedded collapsible terminal panel: multiple plain-shell terminals per workspace, kept alive while collapsed
 - Dedicated file editor window with multi-file tabs that track filesystem changes: Monaco for code, Milkdown WYSIWYG for Markdown, optional Vim mode, font-size/font-family controls, and find/replace
 - LSP-powered code navigation in the editor: go-to-definition (F12 / Cmd+Click), inline definition peek (Alt+Click), find all references (Shift+F12), hover for type signatures and docs, in-file and workspace-wide symbol search, back/forward jump history, and Vim `gd`/`du` bindings
+- Live PPTX editing: open PowerPoint files from the file browser in a dedicated viewer window and let the agent edit slides visually (add/restyle text and shapes, create charts, apply templates), with host-side font access and a localized in-viewer UI
+- Attach PDFs in the composer: a background-parsed PDF is attached as inline context (or an on-demand file) for the agent
 - Safety-first permissions: every bash command asks, secret-file reads ask, the `plan` agent stays read-only, with persistent "always allow" rules and an auto-grant toggle
 - Interactive question cards: step through the agent's questions with options, free-text answers, and Decline/Submit
 - Slash-command discovery (`/`), message revert/unrevert, virtualized long threads, and server-health heartbeat recovery
