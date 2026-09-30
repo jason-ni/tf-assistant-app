@@ -12,6 +12,7 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Chat with an AI agent inside your repositories: multi-turn streaming with text, reasoning, tool-call, todo-list, image, and plan-review parts
 - Auto-continue: when a turn stops mid-task, the agent is nudged to keep going until it signals completion with a `MISSION COMPLETE` sentinel — toggle and a max-nudge cap live in Agent settings
 - Helmor-style composer with model picker (grouped by provider), reasoning-effort picker, agent picker (build / plan / custom), and a live-updating theme-aware context-usage ring
+- App-managed Agent Providers (Settings → Agent Providers): define OpenAI-compatible providers with per-provider model tables, an allowlist mode, default-model selection, and a live connectivity test; API keys are stored in an in-app encrypted store (no macOS Keychain authorization prompts)
 - Repository & workspace model: add local repos or clone from URL, then work in four workspace modes — `worktree` (git worktree checkout), `local` (operate in place), `chat` (scratch), and `non_git` (plain directory)
 - Right-sidebar file browser: filesystem-watched directory tree with auto-refresh, Git status badges, workspace-wide ripgrep file search, read-only preview (incl. inline image/audio/video), and full file ops (new, rename, delete, reveal)
 - Inline Git panel: branch switcher, ahead/behind + staged/unstaged status summary, per-file worktree diffs, and recent commits
