@@ -12,12 +12,12 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Chat with an AI agent inside your repositories: multi-turn streaming with text, reasoning, tool-call, todo-list, image, and plan-review parts
 - Auto-continue: when a turn stops mid-task, the agent is nudged to keep going until it signals completion with a `MISSION COMPLETE` sentinel — toggle and a max-nudge cap live in Agent settings
 - Helmor-style composer with model picker (grouped by provider), reasoning-effort picker, agent picker (build / plan / custom), and a live-updating theme-aware context-usage ring
-- App-managed Agent Providers (Settings → Agent Providers): define OpenAI-compatible providers with per-provider model tables, an allowlist mode, default-model selection, and a live connectivity test; API keys are stored in an in-app encrypted store (no macOS Keychain authorization prompts)
+- App-managed Agent Providers (Settings → Agent Providers): define OpenAI-compatible providers with per-provider model tables, an allowlist mode, default-model selection, and a live connectivity test
 - Repository & workspace model: add local repos or clone from URL, then work in four workspace modes — `worktree` (git worktree checkout), `local` (operate in place), `chat` (scratch), and `non_git` (plain directory)
-- Right-sidebar file browser: filesystem-watched directory tree with auto-refresh, Git status badges, workspace-wide ripgrep file search, read-only preview (incl. inline image/audio/video), and full file ops (new, rename, delete, reveal)
+- Right-sidebar file browser: filesystem-watched directory tree with auto-refresh, Git status badges, workspace-wide ripgrep file search, read-only preview (incl. inline image/audio/video), an "Open with System" context action, a drag-resizable panel width, and full file ops (new, rename, delete, reveal)
 - Inline Git panel: branch switcher, ahead/behind + staged/unstaged status summary, per-file worktree diffs, and recent commits
 - Embedded collapsible terminal panel: multiple plain-shell terminals per workspace, kept alive while collapsed
-- Dedicated file editor window with multi-file tabs that track filesystem changes: Monaco for code, Milkdown WYSIWYG for Markdown, optional Vim mode, font-size/font-family controls, and find/replace
+- Dedicated file editor window with multi-file tabs that track filesystem changes: Monaco for code, Milkdown WYSIWYG for Markdown, inline PDF preview for `.pdf` files, LaTeX math rendering, optional Vim mode, font-size/font-family controls, and find/replace
 - LSP-powered code navigation in the editor: go-to-definition (F12 / Cmd+Click), inline definition peek (Alt+Click), find all references (Shift+F12), hover for type signatures and docs, in-file and workspace-wide symbol search, back/forward jump history, and Vim `gd`/`du` bindings
 - Live PPTX editing: open PowerPoint files from the file browser in a dedicated viewer window and let the agent edit slides visually (add/restyle text and shapes, create charts, apply templates), with host-side font access and a localized in-viewer UI
 - Attach PDFs in the composer: a background-parsed PDF is attached as inline context (or an on-demand file) for the agent
@@ -59,6 +59,7 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Full-featured viewer: zoom/fit, text search, page thumbnails, document outline, rotate, fullscreen, and two-page spread
 - Extract any PDF to Markdown for reading or sending to the agent; embedded images render inline via a lazy, content-addressed image protocol
 - OCR PDFs in three modes — `text` (use the existing text layer), `auto`, or `ocr` (full re-OCR) — run as background tasks with per-page persistence and full-text search
+- App-owned MCP tool groups: the app exposes its OCR and PDF parsing as MCP tools that external MCP clients can call, with structured output for the DotsMOCR / PP-OCR engines
 
 ### Snap Translate
 - One-shortcut workflow: screenshot → OCR → translation
