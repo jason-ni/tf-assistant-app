@@ -2,7 +2,7 @@
 
 # TF-Assistant
 
-**[TF-Assistant](https://plaincomputing.com)** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR & annotation, PDF parsing, translation, and subtitle editing — powered by local AI models.
+**[TF-Assistant](https://plaincomputing.com)** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR & annotation, PDF parsing, translation, subtitle editing, and code-first video authoring — powered by local AI models.
 
 ## Features
 
@@ -25,6 +25,8 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Interactive question cards: step through the agent's questions with options, free-text answers, and Decline/Submit
 - Slash-command discovery (`/`), message revert/unrevert, virtualized long threads, and server-health heartbeat recovery
 - Per-workspace MCP configuration UI layered on your global opencode config (new servers default to disabled)
+- User messages render as Markdown, so inline `$…$` math and formatting display correctly
+- Composer slash menu surfaces `/compact`, plus a reload-skills action that disposes and rebuilds the underlying opencode instance
 
 ### Speech-to-Text
 - Transcribe audio files (WAV, MP3, FLAC, M4A, AAC, and more)
@@ -86,6 +88,17 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Undo/redo
 - Re-transcribe individual segments
 
+### Revideo
+Code-first video authoring: write scenes as TypeScript/JSX and let the agent create, edit, and render them through MCP tools.
+
+- Author scenes as code (imperative `new R.Circle({...})` or JSX `<Circle size={160}/>`), validated live with two-phase commit
+- Multi-scene projects with a timeline: add, reorder, and remove scenes; per-scene narration blocks and presentation stop marks
+- Live preview in the agent sidebar with user-driven play/pause/stop playback (timer-driven while the webview is hidden)
+- Presentation mode: a dedicated window plays the full timeline, pausing at in-scene `beginSlide()` waits and scene boundaries
+- Frame capture: grab a single frame from any point in a scene without rendering the whole clip
+- Async render jobs: render a project or a single scene to MP4/WebM, poll progress per scene, and surface the real error on failure
+- Scene-authoring warnings surfaced to the agent; background sessions render via hidden sidebar previews
+
 ### Model Management
 - Browse, download, and delete AI models from built-in catalog
 - Model groups: ASR, OCR, translation, VAD
@@ -100,6 +113,14 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 ### HTTP Server
 - REST API for speech transcription and translation
 - Configurable host, port, and default model parameters
+
+### Screen & Desktop
+An app-owned MCP group (`tf-assistant-screen`) exposing desktop observation and input to external MCP clients.
+
+- Capture the display, a specific window, or a region to PNG
+- Enumerate on-screen windows and query the frontmost window
+- Synthetic input: click, hover, scroll, type, and press-key at the HID tap
+- An input safety switch (`screen.input_enabled`) gates every write tool; read tools are unaffected
 
 ### Customization
 - Configurable global shortcuts (screenshot, snap translate, audio capture)
