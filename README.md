@@ -2,7 +2,7 @@
 
 # TF-Assistant
 
-**[TF-Assistant](https://plaincomputing.com)** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR & annotation, PDF parsing, translation, subtitle editing, and code-first video authoring — powered by local AI models.
+**[TF-Assistant](https://plaincomputing.com)** is a macOS desktop application that brings together an AI coding agent, speech transcription, screenshot OCR & annotation, PDF parsing, translation, text-to-speech, subtitle editing, and code-first video authoring — powered by local AI models.
 
 ## Features
 
@@ -80,6 +80,10 @@ An Agentic Development Environment (ADE) built on the opencode coding agent, in 
 - Configurable target language
 - Auto-start translation service on boot
 
+### Text-to-Speech
+- Point the app at any OpenAI-compatible TTS endpoint (Settings → TTS API): base URL, API key, default model and voice, optional proxy routing and request timeout
+- App-owned MCP tool group (`tf-assistant-tts`): the agent synthesizes speech asynchronously via `tts_submit` / `tts_poll` / `tts_get_result`; audio is written to disk and referenced by path
+
 ### Subtitle Editor
 - Create and manage subtitle projects
 - Multi-track support
@@ -97,6 +101,7 @@ Code-first video authoring: write scenes as TypeScript/JSX and let the agent cre
 - Presentation mode: a dedicated window plays the full timeline, pausing at in-scene `beginSlide()` waits and scene boundaries
 - Frame capture: grab a single frame from any point in a scene without rendering the whole clip
 - Async render jobs: render a project or a single scene to MP4/WebM, poll progress per scene, and surface the real error on failure
+- Per-scene timed narration is mixed into the rendered output — narration audio is muxed into the final video
 - Scene-authoring warnings surfaced to the agent; background sessions render via hidden sidebar previews
 
 ### Model Management
